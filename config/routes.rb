@@ -5,4 +5,5 @@ Rails.application.routes.draw do
     resources :actives ,only: :index
      resources :reviews ,only: :index
       resources :comments ,only: :index
+       resources :ones ,only: :index
 end
