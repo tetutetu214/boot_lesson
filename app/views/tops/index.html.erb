@@ -1,16 +1,72 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap</title>
-</head>
+
+
+<style>
+.title{
+  /* background-color:#f99; */
+}
+.box1{
+  background-color: bisque;
+}
+.box2{
+  background-color: darkkhaki;
+}
+.box3{
+  background-color: red;
+}
+</style>
+
 <body>
   
-  <div>
-    <h1>Hello,Bootstrap!</h1>
-    <p>ここからBootstrapの学習を始めよう！</p>
-  </div>
+  <div class="container"> 
+    <div class="title row">  
+      <h1 class="mt-5 pb-5">Hello,Bootstrap!</h1>
+    </div>
+
+    <div class="row">
+    <div class ="box1 col-3">box1</div>
+    <div class ="box2 col-7">box2</div>
+    <div class ="box3 col-2">box3</div>
+    </div>
+    <div class="row">
+      <div class ="box1 col-3 offset-2">box1</div>
+      <div class ="box2 col-7">box2</div>
+    </div>
+
+  <table class="table table-hover">
+  <thead>
+    <tr>
+      <th>目標</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+    </tr>
+  </tbody>
+
+</table>
+
+<p>HTMLの段落は<code>p</code>で表現します<p>
+<p>HTMLの段落は<kbd>p</kbd>で表現します<p>
+
+ <pre><code>
+  def name(int)
+   p int
+  end
+
+  name("inamura")
+ </code><pre>
+
+<img class= "img-fluid" src="https://picsum.photos/40/30">
 
 </body>
 </html>
